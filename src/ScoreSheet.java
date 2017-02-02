@@ -1,9 +1,9 @@
 
 public class ScoreSheet {
 	
-	final int MAXTHROWS = 20;
+	final int MAXTHROWS = 21;
 	int[] ballRolled = new int[MAXTHROWS];
-	int ballThrowTurn = 0;
+	int ballThrowTurn = 1;
 
 	
 	public ScoreSheet()
@@ -36,7 +36,7 @@ public class ScoreSheet {
 		
 		if(certainRoll == 18)
 		{
-			return ballRolled[19] + ballRolled[20]+10;
+			return ballRolled[19] + ballRolled[20];
 		}
 
 		int nextRoll = ballRolled[certainRoll+2];
