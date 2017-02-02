@@ -36,7 +36,7 @@ public class ScoreSheet {
 		
 		if(certainRoll == 18)
 		{
-			return ballRolled[19] + ballRolled[20];
+			return ballRolled[19] + ballRolled[20] + 10;
 		}
 
 		int nextRoll = ballRolled[certainRoll+2];
